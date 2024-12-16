@@ -50,7 +50,6 @@
       </a>
 
 
-    
       <nav id="navmenu" class="navmenu">
         <ul>
           <li><a href="index.html" class="active">Home</a></li>
@@ -64,8 +63,7 @@
         <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
       </nav>
 
-
-      <a class="btn-getstarted" href="product.html">Products</a>
+        <a class="btn-getstarted" href="product.html">Products</a>
 
     </div>
   </header>
@@ -75,109 +73,17 @@
     <!-- Page Title -->
     <div class="page-title light-background">
       <div class="container">
-        <h1>Project</h1>
+        <h1>Project Done</h1>
         <nav class="breadcrumbs">
           <ol>
             <li><a href="index.html">Home</a></li>
-            <li class="current">Project</li>
+            <li class="current">Project Done</li>
           </ol>
         </nav>
       </div>
     </div><!-- End Page Title -->
 
-   <!-- Project Details Section -->
-<section id="service-details" class="service-details section">
-  <div class="container">
-    <div class="row gy-5">
-
-      <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
-        <div class="service-box">
-          <h4>Projects List</h4>
-          <div class="services-list">
-            <a href="#" class="active" id="wakafine-link"><i class="bi bi-arrow-right-circle"></i><span>Wakafine</span></a>
-            <a href="#" id="report-card-link"><i class="bi bi-arrow-right-circle"></i><span>Report Card System</span></a>
-          </div>
-        </div><!-- End Projects List -->
-      </div>
-
-      <div class="col-lg-8 ps-lg-5" data-aos="fade-up" data-aos-delay="200">
-        <!-- Image remains the same, only its source changes -->
-        <img id="service-image" src="assets/img/services.jpg" alt="" class="img-fluid services-img">
-        <div id="service-content" class="service-content">
-          <h3>Temporibus et in vero dicta aut eius lidero plastis trand lined voluptas dolorem ut voluptas</h3>
-          <p>
-            Blanditiis voluptate odit ex error ea sed officiis deserunt. Cupiditate non consequatur et doloremque consequuntur. Accusantium labore reprehenderit error temporibus saepe perferendis fuga doloribus vero. Qui omnis quo sit. Dolorem architecto eum et quos deleniti officia qui.
-          </p>
-          <ul>
-            <li><i class="bi bi-check-circle"></i> <span>Aut eum totam accusantium voluptatem.</span></li>
-            <li><i class="bi bi-check-circle"></i> <span>Assumenda et porro nisi nihil nesciunt voluptatibus.</span></li>
-            <li><i class="bi bi-check-circle"></i> <span>Ullamco laboris nisi ut aliquip ex ea</span></li>
-          </ul>
-          <p>
-            Est reprehenderit voluptatem necessitatibus asperiores neque sed ea illo. Deleniti quam sequi optio iste veniam repellat odit. Aut pariatur itaque nesciunt fuga.
-          </p>
-          <p>
-            Sunt rem odit accusantium omnis perspiciatis officia. Laboriosam aut consequuntur recusandae mollitia doloremque est architecto cupiditate ullam. Quia est ut occaecati fuga. Distinctio ex repellendus eveniet velit sint quia sapiente cumque. Et ipsa perferendis ut nihil. Laboriosam vel voluptates tenetur nostrum. Eaque iusto cupiditate et totam et quia dolorum in. Sunt molestiae ipsum at consequatur vero. Architecto ut pariatur autem ad non cumque nesciunt qui maxime. Sunt eum quia impedit dolore alias explicabo ea.
-          </p>
-        </div>
-      </div>
-
-    </div>
-  </div>
-</section><!-- /Projects Details Section -->
-
-<!-- JavaScript to toggle content -->
-<script>
-  // Select the elements
-  const wakafineLink = document.getElementById("wakafine-link");
-  const reportCardLink = document.getElementById("report-card-link");
-  const serviceImage = document.getElementById("service-image");
-  const serviceContent = document.getElementById("service-content");
-
-  // Set up event listeners for the links
-  wakafineLink.addEventListener("click", function(event) {
-    event.preventDefault();
-    changeContent("wakafine");
-  });
-
-  reportCardLink.addEventListener("click", function(event) {
-    event.preventDefault();
-    changeContent("report-card");
-  });
-
-  // Function to change content dynamically
-  function changeContent(project) {
-    if (project === "wakafine") {
-      serviceImage.src ="assets/img/wakafinepic.jpg";  // Change image for Wakafine
-      serviceContent.innerHTML = `
-        <h3>Wakafine Project</h3>
-        <p>This project aims to develop a platform for the Wakafine charity.</p>
-        <ul>
-          <li><i class="bi bi-check-circle"></i> <span>Provides a donation system for the community.</span></li>
-          <li><i class="bi bi-check-circle"></i> <span>Helps track charity funds.</span></li>
-          <li><i class="bi bi-check-circle"></i> <span>Offers transparency for donors.</span></li>
-        </ul>
-        <p>The Wakafine project is designed to support charitable activities and provide full transparency for donations.</p>
-      `;
-    } else if (project === "report-card") {
-      serviceImage.src = 'assets/img/reportcardpic.jpg';  // Change image for Report Card System
-      serviceContent.innerHTML = `
-        <h3>Report Card System</h3>
-        <p>This system helps in automating the management of student report cards.</p>
-        <ul>
-          <li><i class="bi bi-check-circle"></i> <span>Allows teachers to generate report cards online.</span></li>
-          <li><i class="bi bi-check-circle"></i> <span>Provides secure access to parents and students.</span></li>
-          <li><i class="bi bi-check-circle"></i> <span>Supports various grading systems.</span></li>
-        </ul>
-        <p>The Report Card System simplifies the report generation process and enhances communication between teachers, students, and parents.</p>
-      `;
-    }
-  }
-
-  // Trigger the first project by default
-  changeContent("wakafine");
-</script>
-
+   
   </main>
   <footer id="footer" class="footer">
 

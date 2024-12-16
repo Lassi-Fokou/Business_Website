@@ -4,12 +4,12 @@
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <title>Index</title>
+  <title>Fantabyte</title>
   <meta name="description" content="">
   <meta name="keywords" content="">
 
   <!-- Favicons -->
-  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/favicon.ico" rel="icon">
   <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
 
   <!-- Fonts -->
@@ -23,6 +23,11 @@
   <link href="assets/vendor/aos/aos.css" rel="stylesheet">
   <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
   <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  
+
+  <!-- Bootstrap JS (for Carousel) -->
+<script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
 
   <!-- Main CSS File -->
   <link href="assets/css/main.css" rel="stylesheet">
@@ -34,6 +39,44 @@
   * Author: BootstrapMade.com
   * License: https://bootstrapmade.com/license/
   ======================================================== -->
+<style>
+
+.carousel-caption h5 {
+  color: rgb(244, 248, 3);  /* Set text color to white */
+  font-size: 3rem; /* Increase font size to 3rem */
+}
+
+ /* Shadow Box Styling for Carousel */
+.carousel-slide-container {
+  position: relative;
+  box-shadow: 0 4px 12px rgb(238, 235, 235); /* Create the shadow effect */
+  border-radius: 10px; /* Optional: round the corners of the box */
+  overflow: hidden; /* Ensures images fit within the shadow box */
+}
+
+.carousel-caption {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: rgb(251, 254, 255); 
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+.carousel-item img {
+  object-fit: cover; /* Ensures the image covers the container without distortion */
+  height: 500px; /* Adjust the height of the carousel */
+}
+
+.carousel-indicators button {
+  background-color: rgb(6, 253, 109); /* Indicator color */
+}
+
+
+
+</style>
+  
 </head>
 
 <body class="index-page">
@@ -44,126 +87,102 @@
       <a href="index.html" class="logo d-flex align-items-center me-auto me-xl-0">
         <!-- Uncomment the line below if you also wish to use an image logo -->
         <!-- <img src="assets/img/logo.png" alt=""> -->
-        <h1 class="sitename">Fantabyte</h1>
+        <h1 class="sitename">
+          <img src="C:/Users/Fokou/Desktop/Business/Business_Website/assets/img/logos.jpeg"  >
+        </h1>
+        
+        
       </a>
 
       <nav id="navmenu" class="navmenu">
         <ul>
-          <li><a href="#hero" class="active">Home</a></li>
+          <li><a href="index.html" class="active">Home</a></li>
           <li><a href="#about">About</a></li>
-          <li><a href="#services">Services</a></li>
-          <li><a href="#features">Projects</a></li>
+          <li><a href="service-details.html">Services</a></li>
+          <li><a href="projects.html">Projects</a></li>
           <li><a href="#contact">Contact</a></li>
+          <li><a href="testimonials.html">Testimonials</a></li>
+          <li><a href="earn.html">Earn</a></li>
         </ul>
         <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
       </nav>
 
-      <a class="btn-getstarted" href="index.html#about">Products</a>
+      <a class="btn-getstarted" href="product.html">Products</a>
 
     </div>
   </header>
 
   <main class="main">
 
-    <!-- Hero Section -->
-    <section id="hero" class="hero section">
+<!-- Hero Section with Carousel -->
+<section id="hero" class="hero section">
+  <div class="container" data-aos="fade-up" data-aos-delay="100">
+    <div class="row align-items-center">
+      <div class="col-lg-12">
+        <div class="hero-content" data-aos="fade-up" data-aos-delay="200">
 
-      <div class="container" data-aos="fade-up" data-aos-delay="100">
-
-        <div class="row align-items-center">
-          <div class="col-lg-6">
-            <div class="hero-content" data-aos="fade-up" data-aos-delay="200">
-              <div class="company-badge mb-4">
-                <i class="bi bi-gear-fill me-2"></i>
-                Working for your success
-              </div>
-
-              <h1 class="mb-4">
-                Maecenas Vitae <br>
-                Consectetur Led <br>
-                <span class="accent-text">Vestibulum Ante</span>
-              </h1>
-
-              <p class="mb-4 mb-md-5">
-                Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt.
-                Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna.
-              </p>
-
-              <div class="hero-buttons">
-                <a href="#about" class="btn btn-primary me-0 me-sm-2 mx-1">Get Started</a>
-                <a href="https://www.youtube.com/watch?v=Y7f98aduVJ8" class="btn btn-link mt-2 mt-sm-0 glightbox">
-                  <i class="bi bi-play-circle me-1"></i>
-                  Play Video
-                </a>
-              </div>
+          <!-- Carousel -->
+          <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
             </div>
-          </div>
 
-          <div class="col-lg-6">
-            <div class="hero-image" data-aos="zoom-out" data-aos-delay="300">
-              <img src="assets/img/illustration-1.webp" alt="Hero Image" class="img-fluid">
-
-              <div class="customers-badge">
-                <div class="customer-avatars">
-                  <img src="assets/img/avatar-1.webp" alt="Customer 1" class="avatar">
-                  <img src="assets/img/avatar-2.webp" alt="Customer 2" class="avatar">
-                  <img src="assets/img/avatar-3.webp" alt="Customer 3" class="avatar">
-                  <img src="assets/img/avatar-4.webp" alt="Customer 4" class="avatar">
-                  <img src="assets/img/avatar-5.webp" alt="Customer 5" class="avatar">
-                  <span class="avatar more">12+</span>
+            <div class="carousel-inner">
+              <!-- Slide 1: One Challenge -->
+              <div class="carousel-item active">
+                <div class="carousel-slide-container shadow-box">
+                  <img src="C:/Users/Fokou/Desktop/Business/Business_Website/assets/img/challenge.png" class="d-block w-100" alt="One Challenge Image">
+                  <div class="carousel-caption d-none d-md-block">
+                    <h5>One Challenge</h5>
+                    <p>Fantabyte addresses the most complex challenges with innovative digital solutions.</p>
+                  </div>
                 </div>
-                <p class="mb-0 mt-2">12,000+ lorem ipsum dolor sit amet consectetur adipiscing elit</p>
+              </div>
+              
+              <!-- Slide 2: One Solution -->
+              <div class="carousel-item">
+                <div class="carousel-slide-container shadow-box">
+                  <img src="C:/Users/Fokou/Desktop/Business/Business_Website/assets/img/solution.jpg" class="d-block w-100" alt="One Solution Image">
+                  <div class="carousel-caption d-none d-md-block">
+                    <h5>One Solution</h5>
+                    <p>We provide tailored, tech-driven solutions that empower businesses to grow.</p>
+                  </div>
+                </div>
+              </div>
+              
+              <!-- Slide 3: Digital Innovation -->
+              <div class="carousel-item">
+                <div class="carousel-slide-container shadow-box">
+                  <img src="C:/Users/Fokou/Desktop/Business/Business_Website/assets/img/innovation.jpg" class="d-block w-100" alt="Digital Innovation Image">
+                  <div class="carousel-caption d-none d-md-block">
+                    <h5>With Digital Innovation</h5>
+                    <p>Our cutting-edge solutions redefine how businesses thrive in a digital world.</p>
+                  </div>
+                </div>
               </div>
             </div>
-          </div>
-        </div>
 
-        <div class="row stats-row gy-4 mt-5" data-aos="fade-up" data-aos-delay="500">
-          <div class="col-lg-3 col-md-6">
-            <div class="stat-item">
-              <div class="stat-icon">
-                <i class="bi bi-trophy"></i>
-              </div>
-              <div class="stat-content">
-                <h4>3x Won Awards</h4>
-                <p class="mb-0">Vestibulum ante ipsum</p>
-              </div>
-            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
           </div>
-          <div class="col-lg-3 col-md-6">
-            <div class="stat-item">
-              <div class="stat-icon">
-                <i class="bi bi-briefcase"></i>
-              </div>
-              <div class="stat-content">
-                <h4>6.5k Faucibus</h4>
-                <p class="mb-0">Nullam quis ante</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-6">
-            <div class="stat-item">
-              <div class="stat-icon">
-                <i class="bi bi-graph-up"></i>
-              </div>
-              <div class="stat-content">
-                <h4>80k Mauris</h4>
-                <p class="mb-0">Etiam sit amet orci</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-6">
-            <div class="stat-item">
-              <div class="stat-icon">
-                <i class="bi bi-award"></i>
-              </div>
-              <div class="stat-content">
-                <h4>6x Phasellus</h4>
-                <p class="mb-0">Vestibulum ante ipsum</p>
-              </div>
-            </div>
-          </div>
+
         </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+        
 
       </div>
 
@@ -178,58 +197,35 @@
 
           <div class="col-xl-5" data-aos="fade-up" data-aos-delay="200">
             <span class="about-meta">MORE ABOUT US</span>
-            <h2 class="about-title">Voluptas enim suscipit temporibus</h2>
-            <p class="about-description">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+            <h2 class="about-title">Fantabyte</h2>
+            <p class="about-description">"Fantabyte is an innovative software development company committed to transforming ideas into cutting-edge digital solutions. We specialize in building customized software products that help businesses streamline operations, enhance user experience, and drive growth.</p>
 
             <div class="row feature-list-wrapper">
               <div class="col-md-6">
                 <ul class="feature-list">
-                  <li><i class="bi bi-check-circle-fill"></i> Lorem ipsum dolor sit amet</li>
-                  <li><i class="bi bi-check-circle-fill"></i> Consectetur adipiscing elit</li>
-                  <li><i class="bi bi-check-circle-fill"></i> Sed do eiusmod tempor</li>
+                  <li><i class="bi bi-check-circle-fill"></i> Innovation</li>
+                  <li><i class="bi bi-check-circle-fill"></i> Integrity</li>
                 </ul>
               </div>
               <div class="col-md-6">
                 <ul class="feature-list">
-                  <li><i class="bi bi-check-circle-fill"></i> Incididunt ut labore et</li>
-                  <li><i class="bi bi-check-circle-fill"></i> Dolore magna aliqua</li>
-                  <li><i class="bi bi-check-circle-fill"></i> Ut enim ad minim veniam</li>
+                  <li><i class="bi bi-check-circle-fill"></i> Customer-Centricity</li>
+                  <li><i class="bi bi-check-circle-fill"></i> Excellence</li>
                 </ul>
               </div>
             </div>
 
-            <div class="info-wrapper">
-              <div class="row gy-4">
-                <div class="col-lg-5">
-                  <div class="profile d-flex align-items-center gap-3">
-                    <img src="assets/img/avatar-1.webp" alt="CEO Profile" class="profile-image">
-                    <div>
-                      <h4 class="profile-name">Mario Smith</h4>
-                      <p class="profile-position">CEO &amp; Founder</p>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-lg-7">
-                  <div class="contact-info d-flex align-items-center gap-2">
-                    <i class="bi bi-telephone-fill"></i>
-                    <div>
-                      <p class="contact-label">Call us anytime</p>
-                      <p class="contact-number">+123 456-789</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
+          
           </div>
 
           <div class="col-xl-6" data-aos="fade-up" data-aos-delay="300">
             <div class="image-wrapper">
               <div class="images position-relative" data-aos="zoom-out" data-aos-delay="400">
-                <img src="assets/img/about-5.webp" alt="Business Meeting" class="img-fluid main-image rounded-4">
-                <img src="assets/img/about-2.webp" alt="Team Discussion" class="img-fluid small-image rounded-4">
+                <img src="assets/img/programmer.jpg" alt="Business Meeting" class="img-fluid main-image rounded-4">
+                <img src="assets/img/team.jpg" alt="Team Discussion" class="img-fluid small-image rounded-4">
               </div>
               <div class="experience-badge floating">
-                <h3>15+ <span>Years</span></h3>
+                <h3>5+ <span>Years</span></h3>
                 <p>Of experience in business service</p>
               </div>
             </div>
